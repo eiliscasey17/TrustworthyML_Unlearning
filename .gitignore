@@ -1,0 +1,17 @@
+# Ignore datasets, checkpoints, and generated artifacts
+data/
+
+# Block large artifact trees but allow summary files if needed
+artifacts/
+!artifacts/results_summary.json
+!artifacts/results_overview.png
+
+*.pt
+*.pth
+
+# Python/cache
+__pycache__/
+*.pyc
+
+# Notebooks (optional; remove if you want to track)
+*.ipynb
